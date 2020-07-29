@@ -55,6 +55,7 @@ export default class YiReactApp extends Component {
           <View style={{ flex: 2, borderColor: 'grey', borderWidth: 1 }}>
             <TextInput
               ref={this.textRef}
+              keyboardType={'ascii-capable'}
               secureTextEntry={false}
               onChangeText={(textValue) => this.setState({ textValue })}
               placeholder={'Hello World'}
